@@ -30,7 +30,8 @@ namespace Shop
             services.AddCors();
             services.AddControllers();
 
-            var key = Encoding.ASCII.GetBytes(Settings.Secret);
+            var key = Encoding.ASCII.GetBytes(Configuration.GetSection("SecurityKey").GetSection("Secret").Value);
+
             services.AddAuthentication(x =>
             {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

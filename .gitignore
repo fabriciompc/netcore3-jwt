@@ -3,6 +3,8 @@
 # Edit at https://www.gitignore.io/?templates=visualstudio,visualstudiocode
 
 ### VisualStudioCode ###
+.vs
+.vs/*
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json

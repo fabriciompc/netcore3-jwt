@@ -7,6 +7,7 @@ using Shop.Services;
 
 namespace Shop.Controllers
 {
+    [Route("v1/api")]
     public class AuthenticationController : ControllerBase
     {
         [HttpPost]

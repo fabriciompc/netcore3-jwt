@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Shop.Controllers
 {
-    [Route("home")]
+    [Route("v1/api/home")]
     public class HomeController : ControllerBase
     {
         [HttpGet]
